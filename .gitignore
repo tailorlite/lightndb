@@ -1,0 +1,17 @@
+# Build artifacts
+build/
+*.o
+*.exe
+
+# LMDB databases
+*.mdb
+test/tmp/
+seed_db/
+
+# Dependencies (submodules)
+build/_deps/*-src
+vendor/
+
+# IDE
+.vscode/
+.idea/

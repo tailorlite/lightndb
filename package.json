@@ -1,0 +1,64 @@
+{
+  "name": "lightndb",
+  "version": "1.0.0",
+  "description": "A lightweight, schemaless, local JSON document database for Node.js, wrapping LMDB for storage and exposing a MongoDB-like query API with vector search support",
+  "main": "index.js",
+  "bin": {
+    "lightn": "bin/lightn.js"
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "example.js"
+  },
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
+    "start": "node bin/lightn.js ./data",
+    "dev": "node example.js"
+  },
+  "keywords": [
+    "database",
+    "document",
+    "json",
+    "lmdb",
+    "mongodb",
+    "nosql",
+    "local",
+    "embedded",
+    "vector-search",
+    "embeddings",
+    "sqlite-vec"
+  ],
+  "author": "lightndb contributors",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "lmdb": "^3.5.6",
+    "node-llama-cpp": "^3.22.1",
+    "sqlite-vec": "^0.1.9",
+    "ulid": "^3.0.2"
+  },
+  "devDependencies": {
+    "vitest": "^5.0.2"
+  },
+  "files": [
+    "index.js",
+    "bin/",
+    "src/",
+    "docs/",
+    "example.js",
+    "CONTEXT.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lightndb/lightndb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lightndb/lightndb/issues"
+  },
+  "homepage": "https://github.com/lightndb/lightndb#readme"
+}
